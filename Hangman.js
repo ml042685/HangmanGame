@@ -33,3 +33,15 @@ function startGame () {
     console.log(numBlanks);
     console.log(blanksAndSuccess);
 }
+
+
+function checkLetters(letter) {
+
+    var isLetterInWord = false;
+    
+    for (var i=0; i<numBlanks; i++){
+        if(selectWord[i] == letter) {
+            isLetterInWord = true
+        
+        }
+    }
