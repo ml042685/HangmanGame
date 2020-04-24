@@ -31,3 +31,4 @@ After the user wins/loses the game should automatically choose another word and 
 * Github
 
 ## Link
+( https://ml042685.github.io/HangmanGame/)
