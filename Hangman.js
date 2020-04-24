@@ -68,3 +68,12 @@ function roundComplete(){
     document.getElementById("numGuesses").innerHTML = guessesLeft;
     document.getElementById("MovietoGuess").innerHTML = blanksAndSuccess.join(" ");
     document.getElementById("wrongGuesses").innerHTML = wrongLetters.join(" ");
+
+    if (lettersinWord.toString() == blanksAndSuccess.toString()) {
+        winCount++;
+        alert("You Won!");
+
+        document.getElementById("winCounter").innerHTML = winCount;
+
+        startGame();
+    }
