@@ -22,3 +22,8 @@ function startGame () {
     for (var i=0; i<numBlanks; i++){
         blanksAndSuccess.push("_");
     }
+
+    document.getElementById("MovietoGuess").innerHTML = blanksAndSuccess.join(" ");
+    document.getElementById("numGuesses").innerHTML = guessesLeft;
+    document.getElementById("winCounter").innerHTML = winCount;
+    document.getElementById("lossCounter").innerHTML = lossCount;
