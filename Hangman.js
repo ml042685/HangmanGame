@@ -77,3 +77,24 @@ function roundComplete(){
 
         startGame();
     }
+
+    else if (guessesLeft == 0) {
+        lossCount++;
+        alert("You lost!");
+
+        document.getElementById("lossCounter").innerHTML = lossCount;
+    
+        startGame();
+    }
+
+}
+
+startGame();
+
+document.onkeyup = function(event) {
+    var letterGuessed = String.fromCharCode(event.keyCode).toLowerCase();
+    checkLetters(letterGuessed);
+    roundComplete();
+    
+    console.log(letterGuessed);
+}
