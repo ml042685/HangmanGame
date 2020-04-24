@@ -8,3 +8,9 @@ var wrongLetters = [];
 var winCount = 0;
 var lossCount = 0;
 var guessesLeft = 0;
+
+
+function startGame () {
+    selectWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
+    lettersinWord = selectWord.split("");
+    numBlanks = lettersinWord.length;
