@@ -14,3 +14,11 @@ function startGame () {
     selectWord = wordOptions[Math.floor(Math.random() * wordOptions.length)];
     lettersinWord = selectWord.split("");
     numBlanks = lettersinWord.length;
+
+    guessesLeft = 9;
+    wrongLetters = [];
+    blanksAndSuccess = [];
+
+    for (var i=0; i<numBlanks; i++){
+        blanksAndSuccess.push("_");
+    }
