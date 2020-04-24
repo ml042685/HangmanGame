@@ -45,3 +45,15 @@ function checkLetters(letter) {
         
         }
     }
+
+    if(isLetterInWord){
+        for (var i=0; i<numBlanks; i++){
+            if(selectWord[i] == letter) {
+                blanksAndSuccess[i] = letter;
+        }
+    }
+}
+else {
+    wrongLetters.push(letter);
+    guessesLeft--
+}
