@@ -57,3 +57,14 @@ else {
     wrongLetters.push(letter);
     guessesLeft--
 }
+
+console.log(blanksAndSuccess);
+
+}
+
+function roundComplete(){
+    console.log("Win Count: " + winCount + " | Loss Count: " + lossCount + " | Guesses Left" + guessesLeft);
+
+    document.getElementById("numGuesses").innerHTML = guessesLeft;
+    document.getElementById("MovietoGuess").innerHTML = blanksAndSuccess.join(" ");
+    document.getElementById("wrongGuesses").innerHTML = wrongLetters.join(" ");
